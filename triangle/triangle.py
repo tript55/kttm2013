@@ -28,8 +28,12 @@ def check_vuong(a,b,c):
         d = a
         a = c
         c = d
-    if ( a**2+b**2-c**2) < e**2:
-        return 1
+    if ((a*a+b*b-c*c)>0):
+        if ( a*a+b*b-c*c) < e**2:
+            return 1
+    else:
+        if ( c*c-a*a-b*b) < e**2:
+            return 1
     return 0
 def check_triangle(a,b,c):
     if (( a+b ) > c and ( b+c ) > a and ( a+c ) > b):

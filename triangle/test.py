@@ -68,7 +68,5 @@ class TestUM(unittest.TestCase):
         self.assertEqual( detect_triangle(4,5,2**32), "wronginput")
     def test28(self):
         self.assertEqual( detect_triangle(e,e,e),"deu")
-    def test29(self):
-        self.assertEqual( detect_triangle(e,2**32-1,2**32-1),"can")
 if __name__ == '__main__':
     unittest.main()
