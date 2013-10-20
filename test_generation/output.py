@@ -30,7 +30,7 @@ def importfile(filename):
                         raise Exception("wrong input")
                     l = k +2
                     while (l < len(ne)):
-                        if int(ne[k]) < int(ne[l+1]) and int(ne[l]) < int(ne[k+1]):
+                        if int(ne[k]) <= int(ne[l+1]) and int(ne[l]) <= int(ne[k+1]):
                             raise Exception("wrong input")
                         l = l+2
                     x = randint(int(ne[k]),int(ne[k+1]))
